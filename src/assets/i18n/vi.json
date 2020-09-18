@@ -1,0 +1,73 @@
+{
+  "COMMON": {
+    "CANCEL": "キャンセル",
+    "OPEN": "オープン",
+    "CLOSE": "閉じる",
+    "UPLOAD": "アップロード",
+    "DOWNLOAD": "ダウンロード",
+    "FORWARD": "転送する",
+    "SEARCH": "検索",
+    "COMMENT": "コメント",
+    "NAME": "ファイル名",
+    "SIZE": "サイズ",
+    "STATUS": "状況",
+    "STATE": "状態"
+  },
+  "NOT_FOUND": {
+    "PAGE_NOT_FOUND": "あなたが要求したページは見つけられえない！",
+    "RETURN_BACK": "前のページにバックしなさい。"
+  },
+  "TIMEOUT": {
+    "TIMED_OUT": "タイムアウトしました。",
+    "RETURN_LOGIN": "ログイン画面へ戻る。"
+  },
+  "LOGIN": {
+    "TITLE": "{{title}}ログイン",
+    "RESET_PWD_PREFIX": "ユーザーIDやパスワードを忘れた方は ",
+    "RESET_PWD_LINK": "こちら",
+    "RESET_PWD_SUFFIX": " らから。",
+    "ID": "ユーザーID",
+    "PASSWORD": "パスワード",
+    "CHANGE_LANGUAGE": "言語設定<small>（Language)</small>",
+    "LANGUAGE_OPTIONS": {
+      "0": "-- 言語を選択してください --",
+      "ja": "日本語",
+      "en": "英語(English)"
+    },
+    "BUTTON": "ログイン",
+    "INVALID_ID_OR_PWD": "ユーザーIDまたはパスワードが正しくありません。"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "FileZen, Copyright © 2019-2020, Soliton Systems K.K., All rights reserved."
+  },
+  "HEADER": {
+    "APPROVAL": "承認申請",
+    "MAIN": "メイン",
+    "PROFILE": "個人設定",
+    "FILE_LIST": "ファイル一覧",
+    "HISTORY": "操作履歴",
+    "LOGOUT": "ログアウト"
+  },
+  "MAIN": {
+    "NO_FILE_DOWNLOAD": "ダウンロードのための無ファイル",
+    "ADD_FILE": "ファイルを追加",
+    "DRAG": "ここにファイルをドラッグしてください"
+  },
+  "UPLOAD": {
+    "CHECK_ALL": "全て選択",
+    "TIME_UPLOAD": "登録日",
+    "ALL_FILE": "全ファイル(*.*)"
+  },
+  "APPROVAL": {
+    "REGISTRANT": "登録者",
+    "REQUEST_COMMENT": "申請コメント"
+  },
+  "HISTORY": {
+    "HISTORY": "操作履歴",
+    "DATE": "日時",
+    "IF": "I/F",
+    "ACTION": "操作",
+    "UPLOADER": "操作者",
+    "RECEIVER": "承認者"
+  }
+}

@@ -1,0 +1,31 @@
+/*== Bootstrap Variables ==*/
+// Options
+$enable-gradients: true;
+
+// Grid columns
+$grid-columns: 36;
+$grid-gutter-width: 10px;
+
+// Color system
+$primary: #07689f; // TODO: #558ad5
+$secondary: #c9d6df;
+$success: #11d3bc;
+$danger: #f67280;
+$info: #a2d5f2;
+$warning: #ff7e67;
+$light: #fafafa;
+$dark: #4e4e4e;
+
+// Body
+$body-bg: #ebebeb;
+$body-color: #333;
+
+// Typography
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$font-family-monospace: 'Courier New', Courier, monospace;
+
+// Spacing
+$input-btn-focus-width: 0.07rem;
+
+/*== Font Awesome Variables ==*/
+$fa-font-path: '~font-awesome/fonts';

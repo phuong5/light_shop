@@ -2,8 +2,23 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+const jwtRegex = {
+  applied: ":81$",
+  flags: "i",
+};
+
 export const environment = {
-  production: false
+  production: false,
+  session_timeout: 7200,
+  default_lang: "en",
+  languages: ["vi", "en"],
+  jwt_applied_hosts: [new RegExp(jwtRegex.applied, jwtRegex.flags)],
+  jwt_ignored_urls: null,
+  api_base_url: {
+    "^(localhost|127\\.0\\.0\\.1|192\\.168\\.[1-9]\\d+\\.\\d+)\\b":
+      "http://localhost:81",
+    "^.*": "http://192.168.73.186:81",
+  },
 };
 
 /*
