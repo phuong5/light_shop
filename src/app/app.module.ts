@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 import { TranslationService } from './core/services/translation.service';
@@ -15,6 +15,7 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     TranslateModule.forRoot({
       loader: {
