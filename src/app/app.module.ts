@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { Injector, NgModule } from '@angular/core';
 import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TranslateInterceptor } from './core/interceptors/translate.interceptor';
 import { ErrorInterceptor } from './core/interceptors/error.interceptor';
+import { ServiceLocator } from './core/service.locator';
 
 @NgModule({
   declarations: [
@@ -23,11 +24,15 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
         useFactory: TranslationService.createTranslateLoader,
         deps: [HttpClient]
       }
-    })
+    }),
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: TranslateInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(injector: Injector) {
+    ServiceLocator.injector = injector;
+  }
+}
