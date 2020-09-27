@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
+import { SharedModule } from '@app/shared/shared.module';
+import { ListProductComponent } from '../list-product/list-product.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 
 @NgModule({
-  declarations: [DashboardComponent],
+  declarations: [DashboardComponent, ListProductComponent],
   imports: [
     DashboardRoutingModule,
-    AngularFontAwesomeModule
+    SharedModule
   ],
-  exports: [DashboardComponent]
+  exports: [
+    DashboardComponent
+  ]
 })
 export class DashboardModule { }

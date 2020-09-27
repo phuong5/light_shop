@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+header {
+  background: #fff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  .container .row {
+    position: relative;
+
+    .fa-cart-plus {
+      font-size: 40px
+    }
+
+    input.form-control.mr-sm-2 {
+      width: 400px
+    }
+  }
+}
+
+.row::before,
+.container-fluid::before,
+.container::before {
+  display: table;
+  content: " "
+}
+
+.row::after,
+.container-fluid::after,
+.container::after {
+  clear: both
+}
+
+.product-list {
+  display: flex;
+
+  .product-item {
+    padding: 20px
+  }
+
+  .product-item_img img {
+    width: 200px
+  }
+
+  .product-item_info .color {
+    width: 16px;
+    height: 16px;
+    display: inline-block
+  }
+}
+
+nav {
+  @media only screen and (min-device-width: 578px) and (max-device-width: 992px) {
+    .collapse:not(.show) {
+      display: block
+    }
+  }
+}

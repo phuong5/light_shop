@@ -1,73 +1,10 @@
 {
   "COMMON": {
-    "CANCEL": "Cancel",
-    "OPEN": "Open",
-    "CLOSE": "Close",
-    "UPLOAD": "Upload",
-    "DOWNLOAD": "Download",
-    "FORWARD": "Forward",
-    "SEARCH": "Search",
-    "COMMENT": "Comment",
-    "NAME": "Name",
-    "SIZE": "Size",
-    "STATUS": "Status",
-    "STATE": "State"
-  },
-  "NOT_FOUND": {
-    "PAGE_NOT_FOUND": "The page you requested cannot be found!",
-    "RETURN_BACK": "Back to the previous page."
-  },
-  "TIMEOUT": {
-    "TIMED_OUT": "Session has timed out.",
-    "RETURN_LOGIN": "Back to the login page."
-  },
-  "LOGIN": {
-    "TITLE": "{{title}} Login",
-    "RESET_PWD_PREFIX": "Click ",
-    "RESET_PWD_LINK": "here",
-    "RESET_PWD_SUFFIX": " if you have forgot your user ID or password.",
-    "ID": "ID user",
-    "PASSWORD": "Password",
-    "CHANGE_LANGUAGE": "Language<small>(日本語)</small>",
-    "LANGUAGE_OPTIONS": {
-      "0": "-- Please select a language --",
-      "ja": "日本語",
-      "en": "英語(English)"
-    },
-    "BUTTON": "Login",
-    "INVALID_ID_OR_PWD": "User ID or password is incorrect."
-  },
-  "FOOTER": {
-    "COPYRIGHT": "FileZen, Copyright © 2019-2020, Soliton Systems K.K., All rights reserved."
+    "SEARCH": "Search"
   },
   "HEADER": {
-    "APPROVAL": "Approval App",
-    "MAIN": "Main",
-    "PROFILE": "My Settings",
-    "FILE_LIST": "File List",
-    "HISTORY": "Operation History",
-    "LOGOUT": "Logout"
-  },
-  "MAIN": {
-    "NO_FILE_DOWNLOAD": "File download empty",
-    "ADD_FILE": "Add file",
-    "DRAG": "Drag the file here"
-  },
-  "UPLOAD": {
-    "CHECK_ALL": "Check all",
-    "TIME_UPLOAD": "Time upload",
-    "ALL_FILE": "All file(*.*)"
-  },
-  "APPROVAL": {
-    "REGISTRANT": "Registrant",
-    "REQUEST_COMMENT": "Request comment"
-  },
-  "HISTORY": {
-    "HISTORY": "History",
-    "DATE": "Date",
-    "IF": "I/F",
-    "ACTION": "Action",
-    "UPLOADER": "Uploader",
-    "RECEIVER": "Receiver"
+    "MAN": "Man",
+    "WOMAN": "Woman",
+    "CUSTOM_PRODUCT": "Custom"
   }
 }

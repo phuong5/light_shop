@@ -1,0 +1,35 @@
+<section>
+  <div class="product-list">
+    <ng-template ngFor let-product [ngForOf]="productList" [ngForTrackBy]="trackByFn">
+      <div class="product-item">
+        <div class="product-item_img">
+          <a href="#">
+            <img [src]="product.imageUrl" alt="Product">
+          </a>
+        </div>
+        <div class="product-item_info">
+          <div class="product-colors">
+            <ul class="list-inline">
+              <li *ngFor="let color of product.colors" class="list-inline-item">
+                <a class="color" href="#" [style.background-color]="color"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="product-name">
+            <h3>{{product.name}}</h3>
+          </div>
+          <div class="product-price">
+            <h5>{{product.price}}</h5>
+          </div>
+          <div class="product-sizes">
+            <ul class="list-inline">
+              <li *ngFor="let size of product.sizes" class="list-inline-item">
+                <a href="#">{{size}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</section>
