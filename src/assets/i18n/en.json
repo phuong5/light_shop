@@ -6,5 +6,10 @@
     "MAN": "Man",
     "WOMAN": "Woman",
     "CUSTOM_PRODUCT": "Custom"
+  },
+  "PRODUCT": {
+    "BUY": "Buy now",
+    "ADD": "Add",
+    "MORE": "Load more ..."
   }
 }

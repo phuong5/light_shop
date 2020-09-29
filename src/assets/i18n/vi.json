@@ -6,5 +6,10 @@
     "MAN": "Nam",
     "WOMAN": "Nữ",
     "CUSTOM_PRODUCT": "Tự thiết kế"
+  },
+  "PRODUCT": {
+    "BUY": "Mua ngay",
+    "ADD": "Thêm",
+    "MORE": "Tải thêm ..."
   }
 }

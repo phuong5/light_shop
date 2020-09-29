@@ -22,7 +22,7 @@ export class ProductService {
       name: 'Giày 1',
       price: 400000,
       colors: ['#ccc', '#000', '#ff0', '#0F0'],
-      sizes: ['XX', 'XL', 'L', 'M', 'S', 'XS', '38', '39', '40', '41'],
+      sizes: ['XX', 'XL', 'L', 'M', 'S', 'XS', '38', '39', '40', '41', '42', '43', '44'],
       imageUrl: 'https://giayxshop.vn/wp-content/uploads/2018/12/MG_2427-600x600.jpg'
     },
     {
@@ -30,7 +30,7 @@ export class ProductService {
       name: 'Giày 2',
       price: 500000,
       colors: ['#ccc', '#000', '#ff0', '#0F0'],
-      sizes: ['XX', 'XL', 'L', 'M', 'S'],
+      sizes: ['XX', 'XL', 'L', 'M', 'S', '38', '39', '40'],
       imageUrl: 'https://giayxshop.vn/wp-content/uploads/2018/12/MG_2427-600x600.jpg'
     },
     {
@@ -38,7 +38,7 @@ export class ProductService {
       name: 'Giày 3',
       price: 1000000,
       colors: ['#ccc', '#000', '#ff0', '#0F0', '#00f'],
-      sizes: ['XX', 'XL', 'L', 'M', 'S'],
+      sizes: ['XX', 'XL', 'L', 'M', 'S', '38', '39'],
       imageUrl: 'https://giayxshop.vn/wp-content/uploads/2018/12/MG_2427-600x600.jpg'
     }
   ];

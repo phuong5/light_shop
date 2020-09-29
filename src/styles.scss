@@ -36,17 +36,44 @@ header {
   display: flex;
 
   .product-item {
-    padding: 20px
-  }
+    padding: 20px;
+    width: 20%;
 
-  .product-item_img img {
-    width: 200px
-  }
+    .product-item_img {
+      a {
+        display: block;
 
-  .product-item_info .color {
-    width: 16px;
-    height: 16px;
-    display: inline-block
+        img {
+          width: 100%
+        }
+      }
+    }
+
+    .product-item_info {
+      margin-top: 10px;
+
+      .product-name-add,
+      .product-price-buy {
+        display: flex;
+        justify-content: space-between
+      }
+
+      .product-name-add p,
+      .product-price-buy h6 {
+        margin: 0
+      }
+
+      .list-inline {
+        margin: 0;
+
+        .color {
+          width: 16px;
+          height: 16px;
+          display: inline-block
+        }
+      }
+
+    }
   }
 }
 

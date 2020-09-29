@@ -15,21 +15,19 @@
               </li>
             </ul>
           </div>
-          <div class="product-name">
-            <h3>{{product.name}}</h3>
+          <div class="product-name-add">
+            <p>{{product.name}}</p>
+            <button><i class="fa fa-add" aria-hidden="true"></i>{{'PRODUCT.ADD' | translate}}</button>
           </div>
-          <div class="product-price">
-            <h5>{{product.price}}</h5>
-          </div>
-          <div class="product-sizes">
-            <ul class="list-inline">
-              <li *ngFor="let size of product.sizes" class="list-inline-item">
-                <a href="#">{{size}}</a>
-              </li>
-            </ul>
+          <div class="product-price-buy">
+            <h6>{{product.price}}</h6>
+            <button translate>PRODUCT.BUY</button>
           </div>
         </div>
       </div>
     </ng-template>
+  </div>
+  <div class="more">
+    <a href="#" translate>PRODUCT.MORE</a>
   </div>
 </section>
