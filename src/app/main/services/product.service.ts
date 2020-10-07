@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { Observable } from 'rxjs';
 
 export interface Product {
   id: number;
@@ -8,6 +8,12 @@ export interface Product {
   colors: string[];
   sizes: string[];
   imageUrl: string;
+}
+
+export interface OptionProduct {
+  prices: string[];
+  colors: string[];
+  sizes: string[];
 }
 
 @Injectable({
@@ -43,8 +49,11 @@ export class ProductService {
     }
   ];
 
+  readonly colors = ['#ccc', '#000', '#ff0', '#0F0', '#00f', '#AFFF33', '#FFF633', '#FF9333', '#FF4C33', '#33FFF9'];
+  readonly sizes = ['XX', 'XL', 'L', 'M', 'S', 'XS', '38', '39', '40', '41', '42', '43', '44'];
+
   /**
-   * return lisst Product from db
+   * return list Product from db
    */
   getProducts(): Observable<Product[]> {
     return new Observable(observer => {
@@ -60,6 +69,24 @@ export class ProductService {
     return new Observable(observer => {
       const product = this.products.find(p => p.id = id);
       observer.next(product);
+    });
+  }
+
+  /**
+   * return list color
+   */
+  getColors(): Observable<string[]> {
+    return new Observable(observer => {
+      observer.next(this.colors);
+    });
+  }
+
+  /**
+   * return list sizes
+   */
+  getSizes(): Observable<string[]> {
+    return new Observable(observer => {
+      observer.next(this.sizes);
     });
   }
 

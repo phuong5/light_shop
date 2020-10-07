@@ -10,6 +10,10 @@
   "PRODUCT": {
     "BUY": "Mua ngay",
     "ADD": "Thêm",
-    "MORE": "Tải thêm ..."
+    "MORE": "Thêm ..."
+  },
+  "FOOTER": {
+    "CONTACT_MAIL": "Liên hệ: ",
+    "CALL": "Gọi: "
   }
 }

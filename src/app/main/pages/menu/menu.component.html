@@ -1,0 +1,47 @@
+    <div class="menu">
+      <ul class="menu-color list-inline">
+        <li>
+          <h5>Màu sắc</h5>
+        </li>
+        <li *ngFor="let color of colors" class="list-inline-item">
+          <a href="#" class="color" [style.border-color]="color">
+          </a>
+        </li>
+      </ul>
+
+      <ul class="menu-size list-inline">
+        <li>
+          <h5>Kích thước</h5>
+        </li>
+        <li *ngFor="let size of sizes" class="list-inline-item">
+          <a href="#">{{size}}</a>
+        </li>
+      </ul>
+
+      <ul class="menu-price list-inline">
+        <li>
+          <h5>Giá cả</h5>
+        </li>
+        <li class="list-inline-item">
+          <input type="checkbox">
+          <label>Từ 0đ - 200 000đ</label>
+        </li>
+        <li class="list-inline-item">
+          <input type="checkbox">
+          <label>Từ 200 000đ - 400 000đ</label>
+        </li>
+        <li class="list-inline-item">
+          <input type="checkbox">
+          <label>Từ 400 000đ - 600 000đ</label>
+        </li>
+        <li class="list-inline-item">
+          <input type="checkbox">
+          <label>Từ 600 000đ - 800 000đ</label>
+        </li>
+        <li class="list-inline-item">
+          <input type="checkbox">
+          <label>Từ 800 000đ - 1 000 000đ</label>
+        </li>
+      </ul>
+
+    </div>

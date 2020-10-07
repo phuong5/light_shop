@@ -10,6 +10,10 @@
   "PRODUCT": {
     "BUY": "Buy now",
     "ADD": "Add",
-    "MORE": "Load more ..."
+    "MORE": "More ..."
+  },
+  "FOOTER": {
+    "CONTACT_MAIL": "Mail to: ",
+    "CALL": "Call: "
   }
 }
