@@ -2,15 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
+import { BackgroundColorDirective } from './directives/background-color.directive';
+
 @NgModule({
-  declarations: [],
+  declarations: [BackgroundColorDirective],
   imports: [
     CommonModule,
     TranslateModule
   ],
   exports: [
     CommonModule,
-    TranslateModule
+    TranslateModule,
+    BackgroundColorDirective
   ]
 })
 export class SharedModule { }

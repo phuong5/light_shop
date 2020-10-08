@@ -92,6 +92,11 @@ header {
   width: 240px;
   padding: 15px;
 
+  ul.menu-width li:not(:first-child) {
+    margin-bottom: 15px;
+    width: 20%
+  }
+
   .menu-price li:not(:first-child) {
     display: flex;
     display: flex;
@@ -99,6 +104,26 @@ header {
 
     label {
       margin: 0 0 0 10px
+    }
+  }
+
+  .menu-size {
+    .size {
+      color: #000;
+      display: block;
+      width: 100%;
+      height: 24px;
+      background-color: #F2F2F2;
+      text-align: center;
+      line-height: 24px;
+      position: relative;
+      background-position: center;
+      background-size: cover;
+
+      &:hover {
+        text-decoration: none;
+        background-color: #ccc
+      }
     }
   }
 
@@ -110,7 +135,6 @@ header {
     text-decoration: none;
 
     &.color {
-      width: 24px;
       height: 24px;
       border: 2px solid
     }
@@ -124,6 +148,7 @@ footer {
   text-align: center;
   height: 48px;
   line-height: 48px;
+  border-top: 1px solid #e0e0e0;
 
   .bor-footer,
   .mail,
@@ -138,4 +163,8 @@ nav {
       display: block
     }
   }
+}
+
+main {
+  display: flex !important
 }

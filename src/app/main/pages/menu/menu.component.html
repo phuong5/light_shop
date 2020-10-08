@@ -1,20 +1,19 @@
     <div class="menu">
-      <ul class="menu-color list-inline">
+      <ul class="menu-color list-inline menu-width">
         <li>
           <h5>Màu sắc</h5>
         </li>
         <li *ngFor="let color of colors" class="list-inline-item">
-          <a href="#" class="color" [style.border-color]="color">
-          </a>
+          <a href="#" class="color" [style.border-color]="color" appBackgroundColor></a>
         </li>
       </ul>
 
-      <ul class="menu-size list-inline">
+      <ul class="menu-size list-inline menu-width">
         <li>
           <h5>Kích thước</h5>
         </li>
         <li *ngFor="let size of sizes" class="list-inline-item">
-          <a href="#">{{size}}</a>
+          <a href="#" class="size">{{size}}</a>
         </li>
       </ul>
 
